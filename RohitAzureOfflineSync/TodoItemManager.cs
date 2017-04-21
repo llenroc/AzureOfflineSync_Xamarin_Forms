@@ -38,7 +38,7 @@ namespace RohitAzureOfflineSync
 
         private TodoItemManager()
         {
-            this.client = new MobileServiceClient(Constants.ApplicationURL);
+            this.client = new MobileServiceClient(Constants.ApplicationUrl);
 
 #if OFFLINE_SYNC_ENABLED
             var store = new MobileServiceSQLiteStore(offlineDbPath);
